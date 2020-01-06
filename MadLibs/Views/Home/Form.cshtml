@@ -3,16 +3,39 @@
 <head>
     <meta charset='utf-8'>
     <title>Choose Your Words</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <style>
+        .form-group {
+            text-align: center;
+        }
+        button {
+             margin-left: 42%;
+        }
+        .center {
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
     <form action="/story" method="post">
-        <label for="noun">Write a noun</label>
-        <input name="noun" type="text" id="noun">
-        <label for="verb">Choose a verb</label>
-        <input tname="verb" ype="text" id="verb">
-        <label for="name">What is your name?</label>
-        <input name="name" type="text" id="name">
-        <button type="submit">Click to read your story!</button>
+        <div class="form-group">
+            <label for="noun">Write a noun</label>
+            <input name="noun" type="text" id="noun">
+        </div>
+        <div class="form-group">
+            <label for="verb">Choose a verb</label>
+            <input tname="verb" ype="text" id="verb">
+        </div>
+        <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input name="name" type="text" id="name">
+        </div>
+        <button class="btn btn-primary" type="submit">Click to read your story!</button>
     </form>
+
+    <h4 class="center">Once you've submitted words, click the link below to read your story</h4>
+    <p class="center"><a href="Story">Brown and Connie</a></p>
 </body>
 </html>
